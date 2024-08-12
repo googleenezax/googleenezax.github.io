@@ -1,10 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Static Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPUB Reader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #book-content {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>This is a static website hosted on GitHub Pages.</p>
+    <input type="file" id="file-input" accept=".epub">
+    <div id="book-content"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.88/epub.min.js"></script>
+    <script>
+        document.getElementById('file-input').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file && file.type === 'application/epub+zip') {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const epubContent = e.target.result;
+                    // Sử dụng thư viện epub.js để đọc file EPUB
+                    const book = ePub(epubContent);
+                    book.renderTo('book-content');
+                };
+                reader.readAsArrayBuffer(file);
+            } else {
+                alert('Please upload a valid EPUB file.');
+            }
+        });
+    </script>
 </body>
 </html>
