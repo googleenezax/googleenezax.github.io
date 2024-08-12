@@ -13,6 +13,8 @@
             margin-top: 20px;
             border: 1px solid #ccc;
             padding: 10px;
+            height: 600px;
+            overflow: auto;
         }
     </style>
 </head>
@@ -28,9 +30,12 @@
                 const reader = new FileReader();
                 reader.onload = function(e) {
                     const epubContent = e.target.result;
-                    // Sử dụng thư viện epub.js để đọc file EPUB
                     const book = ePub(epubContent);
-                    book.renderTo('book-content');
+                    const rendition = book.renderTo('book-content', {
+                        width: '100%',
+                        height: '100%'
+                    });
+                    rendition.display();
                 };
                 reader.readAsArrayBuffer(file);
             } else {
