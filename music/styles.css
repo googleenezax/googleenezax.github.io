@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #f0f0f0;
+}
+
+.player {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+audio {
+    width: default; /* Đặt độ dài lớn hơn 100% */
+    margin-right: 20px; /* Khoảng cách giữa audio và select */
+}
+
+#playlist {
+    margin-top: 0; /* Loại bỏ khoảng cách trên */
+    padding: 10px;
+    cursor: pointer;
+}
