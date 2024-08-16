@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MP3 Player with Select</title>
+    <title>Auto Render MP3 from Git LFS</title>
 </head>
 <body>
-    <select id="songList" onchange="playSelectedSong()">
-        <option value="../files/5h.mp3">Song 1</option>
-        <option value="song2.mp3">Song 2</option>
-        <option value="song3.mp3">Song 3</option>
-        <!-- Thêm các option khác tại đây -->
-    </select>
-
     <audio controls id="audioPlayer">
         Your browser does not support the audio element.
     </audio>
 
     <script>
-        function playSelectedSong() {
-            const selectElement = document.getElementById('songList');
-            const selectedSong = selectElement.options[selectElement.selectedIndex].value;
-            
-            fetch(selectedSong)
-                .then(response => response.blob())
-                .then(blob => {
-                    const objectURL = URL.createObjectURL(blob);
-                    const audioPlayer = document.getElementById('audioPlayer');
-                    audioPlayer.src = objectURL;
-                    audioPlayer.play();
-                })
-                .catch(error => {
-                    console.error('Error loading the selected song:', error);
-                });
-        }
+        const mp3Url = 'https://googleenezax.github.io/files/5h.mp3'; // Đường dẫn Git LFS của file MP3
+
+        fetch(mp3Url)
+            .then(response => response.blob())
+            .then(blob => {
+                const objectURL = URL.createObjectURL(blob);
+                const audioPlayer = document.getElementById('audioPlayer');
+                audioPlayer.src = objectURL;
+            })
+            .catch(error => {
+                console.error('Error loading the MP3 file:', error);
+            });
     </script>
 </body>
 </html>
