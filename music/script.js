@@ -38,3 +38,5 @@ document.getElementById('audio').volume = 0.5; // Set volume to 50%
 		audio.src = `${selectedOption}`;
 		audio.play();
     });
+	
+	window.history.pushState({}, '', 'Google.com');
