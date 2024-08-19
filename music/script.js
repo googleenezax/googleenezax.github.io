@@ -39,4 +39,38 @@ document.getElementById('audio').volume = 0.5; // Set volume to 50%
 		audio.play();
     });
 	
-	window.history.pushState({}, '', 'Google.com');
+
+// Lưu trữ URL thực sự
+let realURL = window.location.href;
+
+// Hàm thay đổi URL giả
+function changeToCustomURL(customURL) {
+  // Kiểm tra sự hỗ trợ của window.history.replaceState()
+  if (window.history && window.history.replaceState) {
+    window.history.replaceState({}, '', customURL);
+  } else {
+    // Nếu không hỗ trợ, sử dụng window.location.replace()
+    window.location.replace(customURL);
+  }
+}
+
+// Thay đổi URL giả khi người dùng tương tác với các phần tử
+document.addEventListener('click', function(event) {
+  if (event.target.matches('input[type="text"], textarea, a')) {
+    changeToCustomURL('google.com');
+  }
+});
+
+// Trên các thiết bị di động, sử dụng sự kiện 'touchend' thay vì 'click'
+document.addEventListener('touchend', function(event) {
+  if (event.target.matches('input[type="text"], textarea, a')) {
+    changeToCustomURL('google.com');
+  }
+});
+
+// Khi người dùng click vào thanh địa chỉ, hiển thị lại URL thực sự
+document.addEventListener('click', function(event) {
+  if (event.target.matches('input[type="text"]')) {
+    window.history.replaceState({}, '', realURL);
+  }
+});
