@@ -30,3 +30,16 @@ audio {
     padding: 10px;
     cursor: pointer;
 }
+
+select {
+	appearance: none; /* Loại bỏ giao diện mặc định của trình duyệt */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	size: 6;
+	border-radius: 15px;
+	width: 260px;
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 24px;
+}
