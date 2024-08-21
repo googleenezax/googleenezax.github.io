@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="player">
+<div class="container">
+        <div class="box">
+			<div class="player">
         <audio id="audio" controls autoplay>
             <source id="audioSource" src="../files/justatee.mp3" type="audio/mp3">
             Your browser does not support the audio element.
@@ -41,7 +43,21 @@
 			<!--<option value="https://media.githubusercontent.com/media/googleenezax/googleenezax.github.io/main/files/5h.mp3">TestURL (không chọn)</option>-->
         </select>
     </div>
-	
+		</div>
+        <div class="box">
+			<button class="button" onclick="openPopup()">Click để xem các bài hát mới</button>
+		</div>
+</div>
+
+<div class="popup" id="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>Các allbum và bài hát mới được update</h2>
+    <div id="eventContent"></div>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
