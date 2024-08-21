@@ -126,3 +126,7 @@ select {
         cursor: pointer;
         color: #fff;
     }
+
+#eventContent {
+	white-space: pre-line;
+}
