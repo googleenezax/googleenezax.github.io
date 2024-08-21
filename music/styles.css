@@ -8,6 +8,26 @@ body {
     background-color: black;
 }
 
+.new-tag {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+}
+
+.new-tag i {
+  margin-right: 4px;
+  font-size: 10px;
+}
+
+.new-tag.red {
+  background-color: #ff0000;
+}
+
 .container {
         display: flex;
         flex-direction: column;
