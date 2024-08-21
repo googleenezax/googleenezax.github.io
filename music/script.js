@@ -19,7 +19,7 @@ var select = document.getElementById("playlist");
     select.appendChild(sortedOptions[i]);
   }
 
-document.getElementById('audio').volume = 0.5; // Set volume to 50%
+document.getElementById('audio').volume = 0.3; // Set volume to 50%
 
 	const playlist = document.getElementById('playlist');
     const audio = document.getElementById('audio');
