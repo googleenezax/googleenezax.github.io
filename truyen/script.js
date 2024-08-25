@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+    openPopup(); // Gọi hàm openPopup() khi trang đã được tải
+});
+
 function openPopup() {
         document.getElementById("popup").style.display = "block";
         document.getElementById("overlay").style.display = "block";
