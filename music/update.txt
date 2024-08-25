@@ -1,7 +1,7 @@
 UPADATE 25/8:
 - Kim phút kim giờ
 
-- Điều chỉnh âm lượng mặc định thành 30%
+- Điều chỉnh âm lượng mặc định từ 50% thành 30%
 - Loại bỏ tự động phát nhạc khi tải trang
 
 -------/-------
