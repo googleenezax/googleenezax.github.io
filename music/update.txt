@@ -1,8 +1,16 @@
+UPADATE 25/8:
+- Kim phút kim giờ
+
+- Điều chỉnh âm lượng mặc định thành 30%
+- Loại bỏ tự động phát nhạc khi tải trang
+
+-------/-------
 UPADATE 22/8:
 - Playlist
   . Vũ
   . Jin Tuấn Nam
 
+-------/-------
 UPDATE 21/8:
 - Album Black Pink
   . Black Pink P1 (bao gồm 'New woman')

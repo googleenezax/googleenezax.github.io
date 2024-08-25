@@ -15,8 +15,11 @@
             Your browser does not support the audio element.
         </audio>
         <select id="playlist">
-			<option value="../files/vu.mp3">Vũ - Playlist 🔥NEW🔥</option>
-			<option value="../files/jinTuanNam.mp3">Jin Tuấn Nam - Playlist 🔥NEW🔥</option>
+			
+			<option value="../files/kimPhutKimGio.mp3">Kim Phút Kim Giờ 🔥NEW🔥</option>
+			
+			<option value="../files/vu.mp3">Vũ - Playlist</option>
+			<option value="../files/jinTuanNam.mp3">Jin Tuấn Nam - Playlist</option>
 			
 			<option value="../files/blackPink1.mp3">Black Pink P1</option>
 			<option value="../files/blackPink2.mp3">Black Pink P2</option>
@@ -25,7 +28,6 @@
 			<option value="../files/weanLe.mp3">Wean Le</option>
 			<option value="../files/hieuThuHai.mp3">HieuThuHai</option>
 			<option value="../files/imThinkingAboutYou.mp3">I'm thinking about you</option>
-			
 			<option value="../files/justatee.mp3">Justatee</option>
 			<option value="../files/chanThanh.mp3">Chân thành</option>
 			<option value="../files/billieEilish.mp3">Billie Eilish</option>
@@ -58,13 +60,15 @@
 		</div>
 </div>
 
-<div class="popup" id="popup">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <h2>Các albums và bài hát mới</h2>
+
+
+<div class="overlay" id="overlay" onclick="closePopup()" style="display: block;">
+	<div class="popup" id="popup" style="display: block;">
+		<span class="close" onclick="closePopup()">&times;</span>
+		<h2>Các albums và bài hát mới</h2>
     <div id="eventContent"></div>
 </div>
-
-<div class="overlay" id="overlay"></div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
     <script src="script.js"></script>
