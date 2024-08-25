@@ -97,6 +97,7 @@ select {
 }
 
 	.popup {
+		color: white;
         display: none;
         position: fixed;
         top: 50%;
