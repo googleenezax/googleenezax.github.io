@@ -1,26 +1,11 @@
-UPADATE 25/8:
-- Kim phút kim giờ
+UPADATE 28/8:
+- Playlist:
+  . Trung Quân
+  . Tăng Duy Tân
+  . XiaoYun Huang part 1, 2
+- Top C-Pop 2024
+- Cổ phong part 1->4
 
-- Điều chỉnh âm lượng mặc định từ 50% thành 30%
-- Loại bỏ tự động phát nhạc khi tải trang
-
--------/-------
-UPADATE 22/8:
-- Playlist
-  . Vũ
-  . Jin Tuấn Nam
+- Điều chỉnh âm lượng mặc định thành 25%
 
 -------/-------
-UPDATE 21/8:
-- Album Black Pink
-  . Black Pink P1 (bao gồm 'New woman')
-  . Black Pink P2
-  . Black Pink P3
-
-- Le Sserafim
-
-- Wean Le (bao gồm 'Badbye')
-
-- HieuThuHai (bao gồm 'Ngáo ngơ')
-
-- I'm thinking about you
