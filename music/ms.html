@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+        <div class="box">
+			<div class="player">
+        <audio id="audio" controls>
+
+            <source id="audioSource" src="../files/ngot.mp3" type="audio/mp3">
+
+            Your browser does not support the audio element.
+        </audio>
+        <select id="playlist">
+			
+			<option value="../files/ngot.mp3">Ngọt 🔥NEW🔥</option>
+			<option value="../files/ngoKienHuy.mp3">Ngô Kiến Huy 🔥NEW🔥</option>
+			
+			<option value="../files/trungQuan.mp3">Trung Quân</option>
+			<option value="../files/tangDuyTan.mp3">Tăng Duy Tân</option>
+			<option value="../files/cPop.mp3">C-POP</option>
+			<option value="../files/coPhong_P2.mp3">Cổ phong P2</option>
+			<option value="../files/coPhong_P3.mp3">Cổ phong P3</option>
+			<option value="../files/coPhong_P4.mp3">Cổ phong P4</option>
+			<option value="../files/huangXiaoYun_P1.mp3">XiaoYun Huang P1</option>
+			<option value="../files/huangXiaoYun_P2.mp3">XiaoYun Huang P2</option>
+			
+			<option value="../files/kimPhutKimGio.mp3">Kim Phút Kim Giờ </option>
+			
+			<option value="../files/vu.mp3">Vũ - Playlist</option>
+			<option value="../files/jinTuanNam.mp3">Jin Tuấn Nam - Playlist</option>
+			<option value="../files/blackPink1.mp3">Black Pink P1</option>
+			<option value="../files/blackPink2.mp3">Black Pink P2</option>
+			<option value="../files/blackPink3.mp3">Black Pink P3</option>
+			<option value="../files/leSserafim.mp3">Le Sserafim</option>
+			<option value="../files/weanLe.mp3">Wean Le</option>
+			<option value="../files/hieuThuHai.mp3">HieuThuHai</option>
+			<option value="../files/imThinkingAboutYou.mp3">I'm thinking about you</option>
+			<option value="../files/justatee.mp3">Justatee</option>
+			<option value="../files/chanThanh.mp3">Chân thành</option>
+			<option value="../files/billieEilish.mp3">Billie Eilish</option>
+			<option value="../files/taylorSwift.mp3">Taylor Swift</option>
+			<option value="../files/snoopDogg.mp3">Snoop Dogg</option>
+			<option value="../files/walk.mp3">Walk</option>
+			<option value="../files/NSYNC.mp3">NSYNC</option>
+			<option value="../files/backstreetBoys.mp3">Backstreet Boys</option>
+			<option value="../files/MTP.mp3">Sơn Tùng - MTP</option>
+			<option value="../files/atvncg.mp3">Anh trai vượt ngàn chông gai</option>
+			<option value="../files/sayHi.mp3">Anh trai say Hi (P1)</option>
+			<option value="../files/sayHi-p2.mp3">Anh trai say Hi (P2)(new)</option>
+			<option value="../files/alanWalker.mp3">Alan Walker</option>
+			<option value="../files/denHarmony.mp3">Đen - Harmony</option>
+            <option value="../files/DV.mp3">Đen</option>
+            <option value="../files/coPhong_P1.mp3">Cổ phong P1</option>
+            <option value="../files/top100-USUK.mp3">Bill board US-UK</option>
+			<option value="../files/huyR.mp3">HuyR</option>
+			<option value="../files/ballad.mp3">Ballad</option>
+			<option value="../files/topVpop.mp3">Top VPOP</option>
+			<option value="../files/chill.mp3">Nhạc trẻ</option>
+			<option value="../files/ntBallad.mp3">Nhạc trẻ - Ballad</option>
+			<option value="../files/lofiChill.mp3">Lofi Chill</option>
+			<!--<option value="https://media.githubusercontent.com/media/googleenezax/googleenezax.github.io/main/files/5h.mp3">TestURL (không chọn)</option>-->
+        </select>
+    </div>
+		</div>
+        <div class="box">
+			<button class="button" onclick="openPopup()">Chi tiết cập nhật (Click để xem)</button>
+		</div>
+</div>
+
+
+
+<div class="overlay" id="overlay" onclick="closePopup()">
+	<div class="popup" id="popup">
+		<span class="close" onclick="closePopup()">&times;</span>
+		<h2>Các albums và bài hát mới</h2>
+    <div id="eventContent"></div>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
