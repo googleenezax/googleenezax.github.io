@@ -1,11 +1,6 @@
-UPADATE 28/8:
+UPADATE 30/8:
 - Playlist:
-  . Trung Quân
-  . Tăng Duy Tân
-  . XiaoYun Huang part 1, 2
-- Top C-Pop 2024
-- Cổ phong part 1->4
-
-- Điều chỉnh âm lượng mặc định thành 25%
+  . Ngọt
+  . Ngô Kiến Huy
 
 -------/-------
