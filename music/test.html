@@ -1,28 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Render MP3 from Git LFS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Read Excel File</title>
 </head>
 <body>
-    <audio controls id="audioPlayer">
-        Your browser does not support the audio element.
-    </audio>
+    <select id="musicOptions"></select>
 
-    <script>
-        const mp3Url = 'https://googleenezax.github.io/files/5h.mp3'; // Đường dẫn Git LFS của file MP3
-
-        fetch(mp3Url)
-            .then(response => response.blob())
-            .then(blob => {
-                const objectURL = URL.createObjectURL(blob);
-                const audioPlayer = document.getElementById('audioPlayer');
-                audioPlayer.src = objectURL;
-            })
-            .catch(error => {
-                console.error('Error loading the MP3 file:', error);
-            });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.0/xlsx.full.min.js"></script>
+    <script src="test.js"></script>
 </body>
 </html>
