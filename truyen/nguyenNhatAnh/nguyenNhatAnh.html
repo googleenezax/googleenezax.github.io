@@ -24,12 +24,17 @@
         
         ul {
             list-style-type: none;
+			counter-reset: section;
             padding: 0;
         }
         
         li {
             margin-bottom: 10px;
         }
+		li::before {
+        counter-increment: section;
+        content: counter(section) ". ";
+		}
         
         a {
             text-decoration: none;
@@ -44,17 +49,80 @@
 <body>
     <h2>Nguyễn Nhật Ánh - Full list</h2>
     <ul>
-        <li><a href="Anh chi yeu dau.pdf" target="_blank">Anh chị yêu dấu</a></li>
-        <li><a href="Ba lo mau xanh.pdf" target="_blank">Ba lô màu xanh</a></li>
-        <li><a href="baiToanDoCuoiNam.pdf" target="_blank">Bài toán đố cuối năm</a></li>
-        <li><a href="banCoNamChoNgoi.pdf" target="_blank">Bàn có năm chỗ ngồi</a></li>
-        <li><a href="Bi an cua mot.pdf" target="_blank">Bí ẩn của mốt</a></li>
-		<li><a href="Bi mat ke trom.pdf" target="_blank">Bí mật kẻ trộm</a></li>
-		<li><a href="Bo cau khong dua thu.pdf" target="_blank">Bồ câu không đưa thư</a></li>
-		<li><a href="Bo vai nghieng nang.pdf" target="_blank">Bờ vai nghiêng nắng</a></li>
-		<li><a href="Buoi chieu Windows.pdf" target="_blank">Buổi chiều Windows</a></li>
-		<li><a href="Canh dan ong chung minh.pdf" target="_blank">Cánh đàn ông chúng mình</a></li>
+        <li><a href="Anh_chi_yeu_dau.pdf" target="_blank">Anh chị yêu dấu</a></li>
+		<li><a href="Ba_lo_mau_xanh.pdf" target="_blank">Ba lô màu xanh</a></li>
+		<li><a href="Bai_toan_do_cuoi_nam.pdf" target="_blank">Bài toán đố cuối năm</a></li>
+		<li><a href="Ban_co_nam_cho_ngoi.pdf" target="_blank">Bàn có năm chỗ ngồi</a></li>
+		<li><a href="Bat_den_hoa_su.pdf" target="_blank">Bắt đền hoa sứ</a></li>
+		<li><a href="Bi_an_cua_mot.pdf" target="_blank">Bí ẩn của mốt</a></li>
+		<li><a href="Bi_mat_ke_trom.pdf" target="_blank">Bí mật kẻ trộm</a></li>
+		<li><a href="Bo_cau_khong_dua_thu.pdf" target="_blank">Bồ câu không đưa thư</a></li>
+		<li><a href="Bo_vai_nghieng_nang.pdf" target="_blank">Bờ vai nghiêng nắng</a></li>
+		<li><a href="Buoi_chieu_Windows.pdf" target="_blank">Buổi chiều Windows</a></li>
+		<li><a href="Canh_dan_ong_chung_minh.pdf" target="_blank">Cánh đàn ông chúng mình</a></li>
+		<li><a href="Cau_chuc_2_nguoi_hanh_phuc.pdf" target="_blank">Cầu chúc hai người hạnh phúc</a></li>
+		<li><a href="Chu_be_rac_roi.pdf" target="_blank">Chú bé rắc rối</a></li>
+		<li><a href="Chau_cua_ba.pdf" target="_blank">Cháu của bà</a></li>
+		<li><a href="Co_gai_den_tu_hom_qua.pdf" target="_blank">Cô gái đến từ hôm qua</a></li>
+		<li><a href="Co_tich_ben_duong.pdf" target="_blank">Cổ tích bên đường</a></li>
+		<li><a href="Con_chut_gi_de_nho1.pdf" target="_blank">Còn chút gì để nhớ (P1)</a></li>
+		<li><a href="Con_chut_gi_de_nho2.pdf" target="_blank">Còn chút gì để nhớ (P2)</a></li>
+		<li><a href="Con_ruoi.pdf" target="_blank">Con ruồi</a></li>
+		<li><a href="Di_qua_hoa_cuc.pdf" target="_blank">Đi qua hoa cúc</a></li>
+		<li><a href="Doan_kich_tinh_le.pdf" target="_blank">Đoàn kịch tỉnh lẻ</a></li>
+		<li><a href="Ha_do.pdf" target="_blank">Hạ đỏ</a></li>
+		<li><a href="Hoa_hong_xu_khac.pdf" target="_blank">Hoa hồng xứ khác</a></li>
+		<li><a href="Hoa_mi_mot_minh.pdf" target="_blank">Hoạ mi một mình</a></li>
+		<li><a href="Lam_chong_kho_that.pdf" target="_blank">Làm chồng khổ thật</a></li>
+		<li><a href="Lam_gi_co_mot_ong_bo_nhu_the.pdf" target="_blank">Làm gì có một ông bố như thế</a></li>
+		<li><a href="Lang_thang_trong_rung.pdf" target="_blank">Lang thang trong rừng</a></li>
+		<li><a href="Mat_biec.pdf" target="_blank">Mắt biếc</a></li>
+		<li><a href="Mot_minh.pdf" target="_blank">Một mình</a></li>
+		<li><a href="Mot_phut_trach_nhiem.pdf" target="_blank">Một phút trách nhiệm</a></li>
+		<li><a href="Nghe_thuat_bac_thay.pdf" target="_blank">Nghệ thuật bậc thầy</a></li>
+		<li><a href="Ngoi_sao_nho.pdf" target="_blank">Ngôi sao nhỏ</a></li>
+		<li><a href="Ngoi_truong_moi_khi.pdf" target="_blank">Ngôi trường mỗi khi</a></li>
+		<li><a href="Nguoi_tot.pdf" target="_blank">Người tốt</a></li>
+		<li><a href="Nha_ao_thuat.pdf" target="_blank">Nhà ảo thuật</a></li>
+		<li><a href="Nhan_vat_nu_cua_toi.pdf" target="_blank">Nhân vật nữ của tôi</a></li>
+		<li><a href="Nhung_chang_trai_xau_tinh.pdf" target="_blank">Những chàng trai xấu tính</a></li>
+		<li><a href="Nhung_co_em_gai.pdf" target="_blank">Những cô em gái</a></li>
+		<li><a href="Nhung_con_gau_bong.pdf" target="_blank">Những con gấu bông</a></li>
+		<li><a href="Nhung_cuoc_gap_go_tinh_co.pdf" target="_blank">Những cuộc gặp gỡ tình cờ</a></li>
+		<li><a href="Nhung_nguoi_vui_tinh.pdf" target="_blank">Những người vui tính</a></li>
+		<li><a href="Nu_sinh.pdf" target="_blank">Nữ sinh</a></li>
+		<li><a href="Ong_thay_nong_tinh.pdf" target="_blank">Ông thầy nóng tính</a></li>
+		<li><a href="Phong_tro_ba_nguoi.pdf" target="_blank">Phòng trọ ba người</a></li>
+		<li><a href="Quan_Go_di_len.pdf" target="_blank">Quán Gò đi lên</a></li>
+		<li><a href="Quan_kem.pdf" target="_blank">Quán kem</a></li>
+		<li><a href="So_Vo_Loi_Hay_Hai.pdf" target="_blank">Sợ vợ - lợi hay hại</a></li>
+		<li><a href="Tham_tu_nghiep_du.pdf" target="_blank">Thám tử nghiệp dư</a></li>
+		<li><a href="Thang_quy_nho.pdf" target="_blank">Thằng quỷ nhỏ</a></li>
+		<li><a href="Theo_dau_chim_ung.pdf" target="_blank">Theo dấu chim ưng</a></li>
+		<li><a href="Thien_than_nho_cua_toi.pdf" target="_blank">Thiên thần nhỏ của tôi</a></li>
+		<li><a href="Tho_tinh.pdf" target="_blank">Thơ tình</a></li>
+		<li><a href="Tien_chuoc1.pdf" target="_blank">Tiền chuộc (P1)</a></li>
+		<li><a href="Tien_chuoc2.pdf" target="_blank">Tiền chuộc (P2)</a></li>
+		<li><a href="Tivi_,Tu_lanh_hay_Cat-xet.pdf" target="_blank">Tivi, tủ lạnh hay cát-xét</a></li>
+		<li><a href="Toi_tro_thanh_nguoi_noi_tro_dam_dang_nhu_the_nao.pdf" target="_blank">Tôi trở thành người nội trợ đảm đang như thế nào</a></li>
+		<li><a href="Trai_hoa_vang.pdf" target="_blank">Trại hoa vàng</a></li>
+		<li><a href="Truoc_vong_chung_ket.pdf" target="_blank">Trước vòng chung kết</a></li>
+		<li><a href="Truyen_co_tich_danh_cho_nguoi_lon.pdf" target="_blank">Truyện cổ tích dành cho người lớn</a></li>
+		<li><a href="Ut_Quyen_va_toi.pdf" target="_blank">Út Quyền và tôi</a></li>
+		<li><a href="Vien_ngoc.pdf" target="_blank">Viên ngọc</a></li>
+		<li><a href="Xin_loi_may_tai_to.pdf" target="_blank">Xin lỗi mày tai to</a></li>
     </ul>
  <a href="/googleenezax.github.io/index.html">Về trang chủ</a>
+ 
+ <script>
+    // STT
+    document.addEventListener("DOMContentLoaded", function() {
+        let items = document.querySelectorAll('ul li');
+        items.forEach(function(item, index) {
+            item.setAttribute('data-index', index + 1);
+        });
+    });
+</script>
+
 </body>
 </html>
