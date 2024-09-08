@@ -2,4 +2,4 @@
 *.pdf binary
 *.mp3 binary
 *.mp4 binary
-files/test.mp4 filter=lfs diff=lfs merge=lfs -text
+files/videos/test.mp4 filter=lfs diff=lfs merge=lfs -text
