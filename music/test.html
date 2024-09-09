@@ -5,19 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loading...</title>
     <link rel="stylesheet" href="styles.css">
+	<style>
+    .video-container {
+        width: 600px; /* Độ rộng cố định của video */
+        height: 400px; /* Chiều cao cố định của video */
+        overflow: hidden;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: 100%;
+    }
+</style>
 </head>
 <body>
 <div class="container">
         <div class="box">
-			<div class="player">
-        <video id="audio" controls>
-            <source id="audioSource" src="path/to/video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <select id="playlist">
-			<option value="../files/caHoiHoang.mp3">Cá Hồi Hoang 🔥NEW🔥</option>
-        </select>
-    </div>
+			<div class="video-container">
+				<div class="player">
+					<video id="audio" controls>
+						<source id="audioSource" src="../files/Handsome_Guys/Handsome_Guys_000.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<select id="playlist">
+						<option value="../files/Handsome_Guys/Handsome_Guys_000.mp4">video 0</option>
+						<option value="../files/Handsome_Guys/Handsome_Guys_001.mp4">video 1</option>
+						<option value="../files/Handsome_Guys/Handsome_Guys_002.mp4">video 2</option>
+						<option value="../files/Handsome_Guys/Handsome_Guys_003.mp4">video 3</option>
+						<option value="../files/Handsome_Guys/Handsome_Guys_004.mp4">video 4</option>
+					</select>
+				</div>
+			</div>
 		</div>
         <div class="box">
 			<button class="button" onclick="openPopup()">Chi tiết cập nhật (Click để xem)</button>
