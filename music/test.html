@@ -1,45 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loading...</title>
-    <link rel="stylesheet" href="styles.css">
-	<style>
-    .video-container {
-        width: 600px; /* Độ rộng cố định của video */
-        height: 400px; /* Chiều cao cố định của video */
-        overflow: hidden;
-    }
+    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../all.min.css" />
+    <link rel="stylesheet" href="../bootstrap-icons.css.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li class="logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              height="25"
+              viewBox="0 0 24 24"
+              width="25"
+              focusable="false"
+              aria-hidden="true"
+              style="
+                pointer-events: none;
+                display: inherit;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <path
+                clip-rule="evenodd"
+                d="M22.146 11.146a.5.5 0 01-.353.854H20v7.5a1.5 1.5 0 01-1.5 1.5H14v-8h-4v8H5.5A1.5 1.5 0 014 19.5V12H2.207a.5.5 0 01-.353-.854L12 1l10.146 10.146Z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </li>
+          <li><a class="menu" href="truyen/tr.html">Truyện</a></li>
+          <li>
+            <a class="menu" href="truyen_ma/truyen_ma.html"
+              >Truyện ma (audio)</a
+            >
+          </li>
+          <li><a class="menu" href="music/ms.html">Nhạc</a></li>
+        </ul>
+      </nav>
+      <div class="music">
+        <div class="player">
+        <audio id="audio" controls>
+          <source id="audioSource" src="../files/big_bang.mp3" type="audio/mp3"/>
+          Your browser does not support the audio element.
+        </audio>
+        <div>
+          <select id="playlist">
+            <option value="../files/caHoiHoang.mp3">Cá Hồi Hoang</option>
+            <option value="../files/nguoiYeuCoBanGai.mp3">
+              Người yêu có bạn gái
+            </option>
+            <option value="../files/sooBin.mp3">Soobin Hoàng Sơn</option>
+          </select>
+        </div>
+      </div>
+    </div>
 
-    .video-container video {
-        width: 100%;
-        height: 100%;
-    }
-</style>
-</head>
-<body>
-<div class="container">
-        <div class="box">
-			<div class="video-container">
-				<div class="player">
-					<video id="audio" controls preload="auto">
-						<source id="audioSource" src="../files/videos/Handsome_Guys/Handsome_Guys_000.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					<select id="playlist">
-						<option value="../files/videos/Handsome_Guys/Handsome_Guys_000.mp4">video 0</option>
-						<option value="../files/videos/Handsome_Guys/Handsome_Guys_001.mp4">video 1</option>
-						<option value="../files/videos/Handsome_Guys/Handsome_Guys_002.mp4">video 2</option>
-						<option value="../files/videos/Handsome_Guys/Handsome_Guys_003.mp4">video 3</option>
-						<option value="../files/videos/Handsome_Guys/Handsome_Guys_004.mp4">video 4</option>
-					</select>
-				</div>
-			</div>
-		</div>
-</div>
+    <div class="overlay" id="overlay" onclick="closePopup()">
+      <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Các albums và bài hát mới</h2>
+        <div id="eventContent"></div>
+      </div>
+    </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
