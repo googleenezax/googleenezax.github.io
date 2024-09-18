@@ -78,9 +78,9 @@ document.addEventListener("click", function (event) {
 });
 
 //Popup
-document.addEventListener("DOMContentLoaded", function () {
-  openPopup(); // Gọi hàm openPopup() khi trang đã được tải
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   openPopup(); // Gọi hàm openPopup() khi trang đã được tải
+// });
 
 function openPopup() {
   document.getElementById("popup").style.display = "block";
