@@ -69,3 +69,7 @@ select:hover {
 #eventContent {
   white-space: pre-line;
 }
+a {
+  color: inherit;
+  background-color: inherit;
+}
