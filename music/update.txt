@@ -1,3 +1,9 @@
+UPADATE 15/10:
+
+- Playlist (fixed):
+   . Khởi My [1 & 5]
+   
+-------/-------
 UPADATE 14/10:
 
 - Playlist:
