@@ -20,23 +20,32 @@ for (var i = 0; i < sortedOptions.length; i++) {
 }
 
 // Set volume
-document.getElementById("audio").volume = 0.2;
+document.getElementById("audio").volume = 0.3;
 
+// auto next song when ended
 const playlist = document.getElementById("playlist");
 const audio = document.getElementById("audio");
 
 playlist.addEventListener("change", function () {
   const selectedOption = playlist.value;
-  audio.src = `${selectedOption}`;
-  audio.play();
+  if (!playlist.options[playlist.selectedIndex].disabled) {
+    audio.src = `${selectedOption}`;
+    audio.play();
+  }
 });
 
 audio.addEventListener("ended", function () {
-  const currentIndex = playlist.selectedIndex;
-  const nextIndex = currentIndex < playlist.options.length - 1 ? currentIndex + 1 : 0;
+  let currentIndex = playlist.selectedIndex;
+  let nextIndex = currentIndex < playlist.options.length - 1 ? currentIndex + 1 : 0;
+
+  // Skip disabled options
+  while (playlist.options[nextIndex].disabled) {
+    nextIndex = nextIndex < playlist.options.length - 1 ? nextIndex + 1 : 0;
+  }
+
   playlist.selectedIndex = nextIndex;
   const selectedOption = playlist.value;
-  audio.src = `${selectedOption}`;
+  audio.src = selectedOption;
   audio.play();
 });
 
