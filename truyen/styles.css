@@ -1,117 +1,39 @@
-body {
-  margin: 0;
-  padding: 0;
+.player {
+  margin-top: 10px;
+  display: flex; /* Sử dụng Flexbox */
+  align-items: center;
+}
+.music {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  background-color: black;
-  font-family: Arial, sans-serif;
-  color: white;
 }
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #0000ff;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-.new-tag {
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 4px 8px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-}
-
-.new-tag i {
-  margin-right: 4px;
-  font-size: 10px;
-}
-
-.new-tag.red {
-  background-color: #ff0000;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-}
-
-.box {
-  margin: 10px;
-  flex-grow: 1;
-}
-
-.player {
-  background: black;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-}
-
-.button {
-  background-color: #333;
-  color: #fff;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: 2px solid #fff;
-  border-radius: 30px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
 audio {
-  width: default;
-  margin-right: 20px;
+  /* background-color: #333; */
+  border-radius: 30px;
+  margin-right: 10px;
 }
-
+select {
+  appearance: none; /* Loại bỏ giao diện mặc định của trình duyệt */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* background-color: #333; */
+  border-radius: 30px;
+  /* width: 260px; */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-size: 24px; */
+}
+select:hover {
+  background-color: #bbbbbb;
+}
 #playlist {
   margin-top: 0;
   padding: 10px;
   cursor: pointer;
   margin-right: 20px;
 }
-
-select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border-radius: 15px;
-  width: 260px;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 24px;
-}
-
 .popup {
   color: white;
   display: none;
@@ -126,7 +48,6 @@ select {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
-
 .overlay {
   display: none;
   position: fixed;
@@ -137,7 +58,6 @@ select {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 998;
 }
-
 .close {
   position: absolute;
   top: 5px;
@@ -148,4 +68,14 @@ select {
 
 #eventContent {
   white-space: pre-line;
+}
+a {
+  color: inherit;
+  background-color: inherit;
+}
+
+ul.list_tr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
