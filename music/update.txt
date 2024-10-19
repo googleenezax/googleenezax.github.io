@@ -1,3 +1,9 @@
+UPADATE 19/10:
+
+- Playlist:
+   . Chillies
+   
+-------/-------
 UPADATE 15/10:
 
 - Playlist (fixed):
@@ -8,11 +14,5 @@ UPADATE 14/10:
 
 - Playlist:
    . Amee [1-2]
-   
--------/-------
-UPADATE 13/10:
-
-- Playlist:
-   . Khởi My [1-5]
    
 -------/-------
