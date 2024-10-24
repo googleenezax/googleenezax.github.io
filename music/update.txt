@@ -1,3 +1,9 @@
+UPADATE 24/10:
+
+- Nhạc đơn:
+   . APT - Rosé, Bruno Mars [1-2]
+   
+-------/-------
 UPADATE 19/10:
 
 - Playlist:
@@ -8,11 +14,5 @@ UPADATE 15/10:
 
 - Playlist (fixed):
    . Khởi My [1 & 5]
-   
--------/-------
-UPADATE 14/10:
-
-- Playlist:
-   . Amee [1-2]
    
 -------/-------

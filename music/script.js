@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Sắp xếp
 var select = document.getElementById("playlist");
 var options = select.getElementsByTagName("option");
 

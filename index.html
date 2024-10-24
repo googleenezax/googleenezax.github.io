@@ -34,7 +34,47 @@
           <a class="menu" href="truyen_ma/truyen_ma.html">Truyện ma (audio)</a>
         </li>
         <li><a class="menu" href="music/ms.html">Nhạc</a></li>
+        <li class="logo">
+          <a class="menu" onclick="openPopup()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="tabler-icon tabler-icon-bell"
+            >
+              <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path>
+              <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
+            </svg>
+          </a>
+        </li>
       </ul>
     </nav>
+    <div class="overlay" id="overlay" onclick="closePopup()">
+      <div class="popup" id="popup_1">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Update - Nhạc</h2>
+        <div id="eventContent_1"></div>
+      </div>
+      <div class="popup" id="popup_2">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Update - Truyện ma</h2>
+        <div id="eventContent_2"></div>
+      </div>
+      <div class="popup" id="popup_3">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Update - Truyện</h2>
+        <div id="eventContent_3"></div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
