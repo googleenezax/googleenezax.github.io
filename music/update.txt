@@ -1,3 +1,9 @@
+UPADATE 28/10:
+
+- Songs:
+   . The Ballad of the Witches' Road (Sacred Chant Version)
+   . The Ballad of the Witches' Road (Cover Version)
+-------/-------
 UPADATE 24/10:
 
 - Nhạc đơn:
@@ -8,11 +14,5 @@ UPADATE 19/10:
 
 - Playlist:
    . Chillies
-   
--------/-------
-UPADATE 15/10:
-
-- Playlist (fixed):
-   . Khởi My [1 & 5]
    
 -------/-------
