@@ -10,14 +10,39 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Sắp xếp
-var select = document.getElementById("playlist");
-var options = select.getElementsByTagName("option");
+// Sort
+function sort() {
+  var select = document.getElementById("playlist");
+  var options = select.getElementsByTagName("option");
+  var sort = document.getElementById("sort");
+  var sortRandomly = document.getElementById("sort_randomly");
+  var sortedOptions = Array.from(options).sort((a, b) => a.text.localeCompare(b.text));
 
-var sortedOptions = Array.from(options).sort((a, b) => a.text.localeCompare(b.text));
+  for (var i = 0; i < sortedOptions.length; i++) {
+    select.appendChild(sortedOptions[i]);
+  }
+  sort.style.display = "none";
+  sortRandomly.textContent = "Trộn bài";
+}
 
-for (var i = 0; i < sortedOptions.length; i++) {
-  select.appendChild(sortedOptions[i]);
+// Sort_Randomly
+function sortRandomly() {
+  var select = document.getElementById("playlist");
+  var options = Array.from(select.options);
+  var sort = document.getElementById("sort");
+  var sortRandomly = document.getElementById("sort_randomly");
+
+  for (var i = options.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    [options[i], options[j]] = [options[j], options[i]];
+  }
+
+  select.innerHTML = "";
+  options.forEach((option) => {
+    select.add(option);
+  });
+  sort.style.display = "inline-block";
+  sortRandomly.textContent = "Trộn lại";
 }
 
 // Set volume
@@ -50,44 +75,10 @@ audio.addEventListener("ended", function () {
   audio.play();
 });
 
-// Lưu trữ URL thực sự
-let realURL = window.location.href;
-
-// Hàm thay đổi URL giả
-function changeToCustomURL(customURL) {
-  // Kiểm tra sự hỗ trợ của window.history.replaceState()
-  if (window.history && window.history.replaceState) {
-    window.history.replaceState({}, "", customURL);
-  } else {
-    // Nếu không hỗ trợ, sử dụng window.location.replace()
-    window.location.replace(customURL);
-  }
-}
-
-// Thay đổi URL giả khi người dùng tương tác với các phần tử
-document.addEventListener("click", function (event) {
-  if (event.target.matches('input[type="text"], textarea, a')) {
-    changeToCustomURL("google.com");
-  }
-});
-
-// Trên các thiết bị di động, sử dụng sự kiện 'touchend' thay vì 'click'
-document.addEventListener("touchend", function (event) {
-  if (event.target.matches('input[type="text"], textarea, a')) {
-    changeToCustomURL("google.com");
-  }
-});
-
-// Khi người dùng click vào thanh địa chỉ, hiển thị lại URL thực sự
-document.addEventListener("click", function (event) {
-  if (event.target.matches('input[type="text"]')) {
-    window.history.replaceState({}, "", realURL);
-  }
-});
-
 // Popup
 document.addEventListener("DOMContentLoaded", function () {
-  openPopup(); // Gọi hàm openPopup() khi trang đã được tải
+  openPopup();
+  sort(); // Gọi hàm openPopup() sort() khi trang đã được tải
 });
 
 function openPopup() {
@@ -110,3 +101,25 @@ function closePopup() {
   document.getElementById("popup").style.display = "none";
   document.getElementById("overlay").style.display = "none";
 }
+
+// Drop menu 2lv
+const select1 = document.getElementById("list");
+const select2 = document.getElementById("playlist");
+
+select1.addEventListener("change", function () {
+  const selectedValue = select1.value;
+
+  // Lặp qua tất cả các option trong select 2 để ẩn tất cả
+  Array.from(select2.options).forEach((option) => {
+    option.disabled = true;
+    option.setAttribute("hidden", "");
+  });
+
+  // Hiển thị các option có class tương ứng với giá trị đã chọn của select 1
+  Array.from(select2.options).forEach((option) => {
+    if (option.classList.contains(selectedValue)) {
+      option.disabled = false;
+      option.removeAttribute("hidden", "");
+    }
+  });
+});

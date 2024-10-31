@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loading...</title>
-    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="ms.css" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../all.min.css" />
     <link rel="stylesheet" href="../bootstrap-icons.css.css" />
@@ -66,104 +66,139 @@
           Your browser does not support the audio element.
         </audio>
 
+        <!-- Playlists -->
+        <select id="list">
+          <option disabled hidden selected>Chọn playlists...</option>
+          <option value="Andree_right_hand">Andree Right Hand 🔥NEW🔥</option>
+          <option value="other">Other...</option>
+        </select>
+
+        <!-- songs -->
         <select id="playlist">
           <option disabled hidden selected value>Select song...</option>
-          <option value="../files/caHoiHoang.mp3">Cá Hồi Hoang</option>
-          <option value="../files/nguoiYeuCoBanGai.mp3">Người yêu có bạn gái</option>
-          <option value="../files/sooBin.mp3">Soobin Hoàng Sơn</option>
-          <option value="../files/mrSiro.mp3">Mr. Siro</option>
-          <option value="../files/danTruong.mp3">Đan Trường</option>
-          <option value="../files/lyHai.mp3">Lý Hải</option>
-          <option value="../files/bichPhuong.mp3">Bích Phương</option>
-          <option value="../files/hoaMinzy.mp3">Hòa Minzy</option>
-          <option value="../files/isaac.mp3">Isaac [P1]</option>
-          <option value="../files/isaac-p2.mp3">Isaac [P2]</option>
-          <option value="../files/tlinh.mp3">TLinh</option>
-          <option value="../files/rapViet.mp3">Rap Việt</option>
-          <option value="../files/hieuThuHai-p2.mp3">HieuThuHai [P2]</option>
-          <option value="../files/louHoang.mp3">Lou Hoàng</option>
-          <option value="../files/tien2.mp3">Tiên Tiên [P1]</option>
-          <option value="../files/tien2-p2.mp3">Tiên Tiên [P2]</option>
-          <option value="../files/sia.mp3">SIA</option>
-          <option value="../files/adele.mp3">Adele</option>
-          <option value="../files/marshmello.mp3">Marshmello</option>
-          <option value="../files/vu-p2.mp3">Vũ [P2]</option>
-          <option value="../files/binZ.mp3">BinZ</option>
-          <option value="../files/binhYen-Vu.mp3">Bình Yên - Vũ</option>
-          <option value="../files/hkt.mp3">HKT</option>
-          <option value="../files/suyt1.mp3">Suýt 1</option>
-          <option value="../files/suyt2.mp3">Suýt 2</option>
-          <option value="../files/ngot.mp3">Ngọt</option>
-          <option value="../files/ngoKienHuy.mp3">Ngô Kiến Huy</option>
-          <option value="../files/trungQuan.mp3">Trung Quân</option>
-          <option value="../files/tangDuyTan.mp3">Tăng Duy Tân</option>
-          <option value="../files/cPop.mp3">C-POP</option>
-          <option value="../files/coPhong_P2.mp3">古风音乐 - Cổ phong [P2]</option>
-          <option value="../files/coPhong_P3.mp3">古风音乐 - Cổ phong [P3]</option>
-          <option value="../files/coPhong_P4.mp3">古风音乐 - Cổ phong [P4]</option>
-          <option value="../files/huangXiaoYun_P1.mp3">黄霄雲 - Hoàng tiêu vân [P1]</option>
-          <option value="../files/huangXiaoYun_P2.mp3">黄霄雲 - Hoàng tiêu vân [P2]</option>
-          <option value="../files/kimPhutKimGio.mp3">Kim Phút Kim Giờ</option>
-          <option value="../files/vu.mp3">Vũ [P1]</option>
-          <option value="../files/jinTuanNam.mp3">Jin Tuấn Nam - Playlist</option>
-          <option value="../files/blackPink1.mp3">Black Pink [P1]</option>
-          <option value="../files/blackPink2.mp3">Black Pink [P2]</option>
-          <option value="../files/blackPink3.mp3">Black Pink [P3]</option>
-          <option value="../files/leSserafim.mp3">Le Sserafim</option>
-          <option value="../files/weanLe.mp3">Wean Le</option>
-          <option value="../files/hieuThuHai.mp3">HieuThuHai [P1]</option>
-          <option value="../files/imThinkingAboutYou.mp3">I'm thinking about you</option>
-          <option value="../files/justatee.mp3">Justatee</option>
-          <option value="../files/chanThanh.mp3">Chân thành</option>
-          <option value="../files/billieEilish.mp3">Billie Eilish</option>
-          <option value="../files/taylorSwift.mp3">Taylor Swift</option>
-          <option value="../files/snoopDogg.mp3">Snoop Dogg</option>
-          <option value="../files/walk.mp3">Walk</option>
-          <option value="../files/NSYNC.mp3">NSYNC</option>
-          <option value="../files/backstreetBoys.mp3">Backstreet Boys</option>
-          <option value="../files/MTP.mp3">Sơn Tùng - MTP</option>
-          <option value="../files/atvncg.mp3">Anh trai vượt ngàn chông gai</option>
-          <option value="../files/alanWalker.mp3">Alan Walker</option>
-          <option value="../files/denHarmony.mp3">Đen - Harmony</option>
-          <option value="../files/DV.mp3">Đen</option>
-          <option value="../files/coPhong_P1.mp3">古风音乐 - Cổ phong [P1]</option>
-          <option value="../files/top100-USUK.mp3">Bill board US-UK</option>
-          <option value="../files/huyR.mp3">HuyR</option>
-          <option value="../files/ballad.mp3">Ballad</option>
-          <option value="../files/topVpop.mp3">Top VPOP</option>
-          <option value="../files/chill.mp3">Nhạc trẻ</option>
-          <option value="../files/ntBallad.mp3">Nhạc trẻ - Ballad</option>
-          <option value="../files/lofiChill.mp3">Lofi Chill</option>
-          <option value="../files/big_bang.mp3">Big Bang</option>
-          <option value="../files/wxrdie.mp3">Wxrdie</option>
-          <option value="../files/Anh_trai_say_hi_p1.m4a">Anh trai say Hi [P1]</option>
-          <option value="../files/Anh_trai_say_hi_p2.m4a">Anh trai say Hi [P2]</option>
-          <option value="../files/Anh_trai_say_hi_p3.m4a">Anh trai say Hi [P3]</option>
-          <option value="../files/Danh_doi_Obito.mp3">Đánh Đổi - Obito</option>
-          <option value="../files/Quang_Hung_MasterD_p1.mp3">Quang Hùng MasterD [P1]</option>
-          <option value="../files/Quang_Hung_MasterD_p2.mp3">Quang Hùng MasterD [P2]</option>
-          <option value="../files/Phan_Manh_Quynh.mp3">Phan Mạnh Quỳnh</option>
-          <option value="../files/Mach_Tieu_Dau_p1.mp3">麦小兜 - Mạch Tiểu Đâu [P1]</option>
-          <option value="../files/Mach_Tieu_Dau_p2.mp3">麦小兜 - Mạch Tiểu Đâu [P2]</option>
-          <option value="../files/Mach_Tieu_Dau_p3.mp3">麦小兜 - Mạch Tiểu Đâu [P3]</option>
-          <option value="../files/Mach_Tieu_Dau_p4.mp3">麦小兜 - Mạch Tiểu Đâu [P4]</option>
-          <option value="../files/Ronboogz.opus">Rongoogz</option>
-          <option value="../files/Dau_co_loi_lam.mp3">Dẫu có lỗi lầm</option>
-          <option value="../files/2NE1.mp3">2NE1</option>
-          <option value="../files/vu_p3.opus">Vũ [P3]</option>
-          <option value="../files/musics/Khoi_my/Khoi_my_p1.mp3">Khởi My [1]</option>
-          <option value="../files/musics/Khoi_my/Khoi_my_p2.mp3">Khởi My [2]</option>
-          <option value="../files/musics/Khoi_my/Khoi_my_p3.mp3">Khởi My [3]</option>
-          <option value="../files/musics/Khoi_my/Khoi_my_p4.mp3">Khởi My [4]</option>
-          <option value="../files/musics/Khoi_my/Khoi_my_p5.mp3">Khởi My [5]</option>
-          <option value="../files/musics/Amee/Amee_p1.mp3">Amee [1]</option>
-          <option value="../files/musics/Amee/Amee_p2.mp3">Amee [2]</option>
+          <option disabled value>Trống...</option>
+          <option disabled hidden class="other" value="../files/caHoiHoang.mp3">Cá Hồi Hoang</option>
+          <option disabled hidden class="other" value="../files/nguoiYeuCoBanGai.mp3">Người yêu có bạn gái</option>
+          <option disabled hidden class="other" value="../files/sooBin.mp3">Soobin Hoàng Sơn</option>
+          <option disabled hidden class="other" value="../files/mrSiro.mp3">Mr. Siro</option>
+          <option disabled hidden class="other" value="../files/danTruong.mp3">Đan Trường</option>
+          <option disabled hidden class="other" value="../files/lyHai.mp3">Lý Hải</option>
+          <option disabled hidden class="other" value="../files/bichPhuong.mp3">Bích Phương</option>
+          <option disabled hidden class="other" value="../files/hoaMinzy.mp3">Hòa Minzy</option>
+          <option disabled hidden class="other" value="../files/isaac.mp3">Isaac [P1]</option>
+          <option disabled hidden class="other" value="../files/isaac-p2.mp3">Isaac [P2]</option>
+          <option disabled hidden class="other" value="../files/tlinh.mp3">TLinh</option>
+          <option disabled hidden class="other" value="../files/rapViet.mp3">Rap Việt</option>
+          <option disabled hidden class="other" value="../files/hieuThuHai-p2.mp3">HieuThuHai [P2]</option>
+          <option disabled hidden class="other" value="../files/louHoang.mp3">Lou Hoàng</option>
+          <option disabled hidden class="other" value="../files/tien2.mp3">Tiên Tiên [P1]</option>
+          <option disabled hidden class="other" value="../files/tien2-p2.mp3">Tiên Tiên [P2]</option>
+          <option disabled hidden class="other" value="../files/sia.mp3">SIA</option>
+          <option disabled hidden class="other" value="../files/adele.mp3">Adele</option>
+          <option disabled hidden class="other" value="../files/marshmello.mp3">Marshmello</option>
+          <option disabled hidden class="other" value="../files/vu-p2.mp3">Vũ [P2]</option>
+          <option disabled hidden class="other" value="../files/binZ.mp3">BinZ</option>
+          <option disabled hidden class="other" value="../files/binhYen-Vu.mp3">Bình Yên - Vũ</option>
+          <option disabled hidden class="other" value="../files/hkt.mp3">HKT</option>
+          <option disabled hidden class="other" value="../files/suyt1.mp3">Suýt 1</option>
+          <option disabled hidden class="other" value="../files/suyt2.mp3">Suýt 2</option>
+          <option disabled hidden class="other" value="../files/ngot.mp3">Ngọt</option>
+          <option disabled hidden class="other" value="../files/ngoKienHuy.mp3">Ngô Kiến Huy</option>
+          <option disabled hidden class="other" value="../files/trungQuan.mp3">Trung Quân</option>
+          <option disabled hidden class="other" value="../files/tangDuyTan.mp3">Tăng Duy Tân</option>
+          <option disabled hidden class="other" value="../files/cPop.mp3">C-POP</option>
+          <option disabled hidden class="other" value="../files/coPhong_P2.mp3">古风音乐 - Cổ phong [P2]</option>
+          <option disabled hidden class="other" value="../files/coPhong_P3.mp3">古风音乐 - Cổ phong [P3]</option>
+          <option disabled hidden class="other" value="../files/coPhong_P4.mp3">古风音乐 - Cổ phong [P4]</option>
+          <option disabled hidden class="other" value="../files/huangXiaoYun_P1.mp3">黄霄雲 - Hoàng tiêu vân [P1]</option>
+          <option disabled hidden class="other" value="../files/huangXiaoYun_P2.mp3">黄霄雲 - Hoàng tiêu vân [P2]</option>
+          <option disabled hidden class="other" value="../files/kimPhutKimGio.mp3">Kim Phút Kim Giờ</option>
+          <option disabled hidden class="other" value="../files/vu.mp3">Vũ [P1]</option>
+          <option disabled hidden class="other" value="../files/jinTuanNam.mp3">Jin Tuấn Nam - Playlist</option>
+          <option disabled hidden class="other" value="../files/blackPink1.mp3">Black Pink [P1]</option>
+          <option disabled hidden class="other" value="../files/blackPink2.mp3">Black Pink [P2]</option>
+          <option disabled hidden class="other" value="../files/blackPink3.mp3">Black Pink [P3]</option>
+          <option disabled hidden class="other" value="../files/leSserafim.mp3">Le Sserafim</option>
+          <option disabled hidden class="other" value="../files/weanLe.mp3">Wean Le</option>
+          <option disabled hidden class="other" value="../files/hieuThuHai.mp3">HieuThuHai [P1]</option>
+          <option disabled hidden class="other" value="../files/imThinkingAboutYou.mp3">I'm thinking about you</option>
+          <option disabled hidden class="other" value="../files/justatee.mp3">Justatee</option>
+          <option disabled hidden class="other" value="../files/chanThanh.mp3">Chân thành</option>
+          <option disabled hidden class="other" value="../files/billieEilish.mp3">Billie Eilish</option>
+          <option disabled hidden class="other" value="../files/taylorSwift.mp3">Taylor Swift</option>
+          <option disabled hidden class="other" value="../files/snoopDogg.mp3">Snoop Dogg</option>
+          <option disabled hidden class="other" value="../files/walk.mp3">Walk</option>
+          <option disabled hidden class="other" value="../files/NSYNC.mp3">NSYNC</option>
+          <option disabled hidden class="other" value="../files/backstreetBoys.mp3">Backstreet Boys</option>
+          <option disabled hidden class="other" value="../files/MTP.mp3">Sơn Tùng - MTP</option>
+          <option disabled hidden class="other" value="../files/atvncg.mp3">Anh trai vượt ngàn chông gai</option>
+          <option disabled hidden class="other" value="../files/alanWalker.mp3">Alan Walker</option>
+          <option disabled hidden class="other" value="../files/denHarmony.mp3">Đen - Harmony</option>
+          <option disabled hidden class="other" value="../files/DV.mp3">Đen</option>
+          <option disabled hidden class="other" value="../files/coPhong_P1.mp3">古风音乐 - Cổ phong [P1]</option>
+          <option disabled hidden class="other" value="../files/top100-USUK.mp3">Bill board US-UK</option>
+          <option disabled hidden class="other" value="../files/huyR.mp3">HuyR</option>
+          <option disabled hidden class="other" value="../files/ballad.mp3">Ballad</option>
+          <option disabled hidden class="other" value="../files/topVpop.mp3">Top VPOP</option>
+          <option disabled hidden class="other" value="../files/chill.mp3">Nhạc trẻ</option>
+          <option disabled hidden class="other" value="../files/ntBallad.mp3">Nhạc trẻ - Ballad</option>
+          <option disabled hidden class="other" value="../files/lofiChill.mp3">Lofi Chill</option>
+          <option disabled hidden class="other" value="../files/big_bang.mp3">Big Bang</option>
+          <option disabled hidden class="other" value="../files/wxrdie.mp3">Wxrdie</option>
+          <option disabled hidden class="other" value="../files/Anh_trai_say_hi_p1.m4a">Anh trai say Hi [P1]</option>
+          <option disabled hidden class="other" value="../files/Anh_trai_say_hi_p2.m4a">Anh trai say Hi [P2]</option>
+          <option disabled hidden class="other" value="../files/Anh_trai_say_hi_p3.m4a">Anh trai say Hi [P3]</option>
+          <option disabled hidden class="other" value="../files/Danh_doi_Obito.mp3">Đánh Đổi - Obito</option>
+          <option disabled hidden class="other" value="../files/Quang_Hung_MasterD_p1.mp3">Quang Hùng MasterD [P1]</option>
+          <option disabled hidden class="other" value="../files/Quang_Hung_MasterD_p2.mp3">Quang Hùng MasterD [P2]</option>
+          <option disabled hidden class="other" value="../files/Phan_Manh_Quynh.mp3">Phan Mạnh Quỳnh</option>
+          <option disabled hidden class="other" value="../files/Mach_Tieu_Dau_p1.mp3">麦小兜 - Mạch Tiểu Đâu [P1]</option>
+          <option disabled hidden class="other" value="../files/Mach_Tieu_Dau_p2.mp3">麦小兜 - Mạch Tiểu Đâu [P2]</option>
+          <option disabled hidden class="other" value="../files/Mach_Tieu_Dau_p3.mp3">麦小兜 - Mạch Tiểu Đâu [P3]</option>
+          <option disabled hidden class="other" value="../files/Mach_Tieu_Dau_p4.mp3">麦小兜 - Mạch Tiểu Đâu [P4]</option>
+          <option disabled hidden class="other" value="../files/Ronboogz.opus">Rongoogz</option>
+          <option disabled hidden class="other" value="../files/Dau_co_loi_lam.mp3">Dẫu có lỗi lầm</option>
+          <option disabled hidden class="other" value="../files/2NE1.mp3">2NE1</option>
+          <option disabled hidden class="other" value="../files/vu_p3.opus">Vũ [P3]</option>
+          <option disabled hidden class="other" value="../files/musics/Khoi_my/Khoi_my_p1.mp3">Khởi My [1]</option>
+          <option disabled hidden class="other" value="../files/musics/Khoi_my/Khoi_my_p2.mp3">Khởi My [2]</option>
+          <option disabled hidden class="other" value="../files/musics/Khoi_my/Khoi_my_p3.mp3">Khởi My [3]</option>
+          <option disabled hidden class="other" value="../files/musics/Khoi_my/Khoi_my_p4.mp3">Khởi My [4]</option>
+          <option disabled hidden class="other" value="../files/musics/Khoi_my/Khoi_my_p5.mp3">Khởi My [5]</option>
+          <option disabled hidden class="other" value="../files/musics/Amee/Amee_p1.mp3">Amee [1]</option>
+          <option disabled hidden class="other" value="../files/musics/Amee/Amee_p2.mp3">Amee [2]</option>
+          <option disabled hidden class="other" value="../files/Chillies.mp3">Chillies</option>
+          <option disabled hidden class="other" value="../files/musics/Rose/APT.mp3">APT</option>
+          <option disabled hidden class="other" value="../files/The Ballad of the Witches' Road (Sacred Chant Version).m4a">The Witches' Road 🔥NEW🔥</option>
+          <option disabled hidden class="other" value="../files/The Ballad of the Witches' Road (Cover Version)_.m4a">The Witches' Road (Cover) 🔥NEW🔥</option>
 
-          <option value="../files/Chillies.mp3">Chillies</option>
-          <option value="../files/musics/Rose/APT.mp3">APT 🔥NEW🔥</option>
-          <option value="../files/The Ballad of the Witches' Road (Sacred Chant Version).m4a">The Witches' Road 🔥NEW🔥</option>
-          <option value="../files/The Ballad of the Witches' Road (Cover Version)_.m4a">The Witches' Road (Cover) 🔥NEW🔥</option>
+          <!-- Andree Right Hand -->
+          <option disabled hidden value="../files/musics/Andree_right_hand/.mp3" class="Andree_right_hand">V-Racks</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/PartyAllNight.mp3" class="Andree_right_hand">Party All Night</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/ChoiNhuTuiMy.mp3" class="Andree_right_hand">Chơi như tụi Mỹ</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/EmIu.mp3" class="Andree_right_hand">Em iu</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/KissingOnMyTatts.mp3" class="Andree_right_hand">Kissing On My Tatts</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/NhacAnh.mp3" class="Andree_right_hand">Nhạc Anh</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/ChamLanMoiEm.mp3" class="Andree_right_hand">Chạm Làn Môi Em</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/CallMeTheLiar2.mp3" class="Andree_right_hand">Call Me The Liar 2</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/Chanh.mp3" class="Andree_right_hand">Chảnh</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/WetLensTouliverDeepmix.mp3" class="Andree_right_hand">Wet Lens (Touliver Deepmix)</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/OneLuv.mp3" class="Andree_right_hand">One Luv</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/ILikeYou.mp3" class="Andree_right_hand">I Like You</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/ViAnh.mp3" class="Andree_right_hand">Vì Anh</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/WrongBitch.mp3" class="Andree_right_hand">Wrong Bitch</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/AiDaKhienEmNhuVayRemix.mp3" class="Andree_right_hand">Ai Đã Khiến Em Như Vậy (Remix)</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/JustADream.mp3" class="Andree_right_hand">Just A Dream (Viet Remix)</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/Black38YellowVietRemix.mp3" class="Andree_right_hand">Black & Yellow (Viet Remix)</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/LeavingMeisSoEasyRemix.mp3" class="Andree_right_hand">Leaving Me is So Easy (Remix)</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/ReplayVietRemix.mp3" class="Andree_right_hand">Replay (Viet Remix)</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/SpaceShip.mp3" class="Andree_right_hand">SpaceShip</option>
+          <option disabled hidden value="../files/musics/Andree_right_hand/VaLinhTinhChamLungTung.mp3" class="Andree_right_hand">Va Linh Tinh & Chạm Lung Tung</option>
         </select>
+        <div>
+          <button id="sort_randomly" onclick="sortRandomly()">Trộn bài</button>
+          <button id="sort" style="display: none" onclick="sort()">Xắp sếp</button>
+        </div>
       </div>
     </div>
     <div class="overlay" id="overlay" onclick="closePopup()">
