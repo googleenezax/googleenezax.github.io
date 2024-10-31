@@ -46,7 +46,7 @@ function sortRandomly() {
 }
 
 // Set volume
-document.getElementById("audio").volume = 0.3;
+document.getElementById("audio").volume = 0.25;
 
 // auto next song when ended
 const playlist = document.getElementById("playlist");
