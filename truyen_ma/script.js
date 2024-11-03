@@ -50,10 +50,10 @@ audio.addEventListener("ended", function () {
   audio.play();
 });
 
-//Popup
-// document.addEventListener("DOMContentLoaded", function () {
-//   openPopup(); // Gọi hàm openPopup() khi trang đã được tải
-// });
+// Popup
+document.addEventListener("DOMContentLoaded", function () {
+  openPopup(); // Gọi hàm openPopup() khi trang đã được tải
+});
 
 function openPopup() {
   document.getElementById("popup").style.display = "block";
