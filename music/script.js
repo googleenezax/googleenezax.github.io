@@ -123,3 +123,47 @@ select1.addEventListener("change", function () {
     }
   });
 });
+
+// Đường dẫn cố định đến file CSV
+const csvFilePath = "List musics.csv"; // Thay bằng đường dẫn thực tế của bạn
+
+// Hàm tải và xử lý file CSV
+fetch(csvFilePath)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.text();
+  })
+  .then((csv) => {
+    Papa.parse(csv, {
+      header: true,
+      dynamicTyping: true,
+      complete: function (results) {
+        results.data.forEach(function (row) {
+          var option = document.createElement("option");
+          option.text = row["Tên bài hát(file name)"];
+          option.value = row["SCR"];
+
+          // Thêm thuộc tính: disabled, hidden
+          option.disabled = true;
+          option.hidden = true;
+
+          // Xử lý các class từ cột "Class"
+          var classes = row["Class"].split(",");
+          classes.forEach(function (classItem) {
+            var trimmedClass = classItem.trim();
+            if (trimmedClass !== "null") {
+              option.setAttribute("class", (option.getAttribute("class") || "") + " " + trimmedClass);
+            }
+          });
+
+          // Thêm option vào dropdown
+          document.getElementById("playlist").appendChild(option);
+        });
+      },
+    });
+  })
+  .catch((error) => {
+    console.error("Error loading CSV file:", error);
+  });
