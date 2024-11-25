@@ -167,3 +167,9 @@ fetch(csvFilePath)
   .catch((error) => {
     console.error("Error loading CSV file:", error);
   });
+
+// document.getElementById("playlist").addEventListener("change", function () {
+//   var selectedOption = this.options[this.selectedIndex].value;
+//   var encodedURL = encodeURI(selectedOption);
+//   document.getElementById("audioSource").src = encodedURL;
+// });
