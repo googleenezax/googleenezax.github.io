@@ -77,8 +77,7 @@ audio.addEventListener("ended", function () {
 
 // Popup
 document.addEventListener("DOMContentLoaded", function () {
-  openPopup();
-  sort(); // Gọi hàm openPopup() sort() khi trang đã được tải
+  openPopup(); // Gọi hàm openPopup() sort() khi trang đã được tải
 });
 
 function openPopup() {
@@ -160,6 +159,7 @@ fetch(csvFilePath)
 
           // Thêm option vào dropdown
           document.getElementById("playlist").appendChild(option);
+          sort();
         });
       },
     });
