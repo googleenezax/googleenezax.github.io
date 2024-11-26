@@ -10,7 +10,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Sort
+// Sort list
+function sortList() {
+  var select = document.getElementById("list");
+  var options = select.getElementsByTagName("option");
+  var sortedOptions = Array.from(options).sort((a, b) => a.text.localeCompare(b.text));
+
+  for (var i = 0; i < sortedOptions.length; i++) {
+    select.appendChild(sortedOptions[i]);
+  }
+}
+
+// Sort playlist
 function sort() {
   var select = document.getElementById("playlist");
   var options = select.getElementsByTagName("option");
@@ -77,7 +88,8 @@ audio.addEventListener("ended", function () {
 
 // Popup
 document.addEventListener("DOMContentLoaded", function () {
-  openPopup(); // Gọi hàm openPopup() sort() khi trang đã được tải
+  openPopup();
+  sortList(); // Gọi hàm openPopup() sort() khi trang đã được tải
 });
 
 function openPopup() {

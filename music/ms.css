@@ -29,6 +29,9 @@ select {
 select:hover {
   background-color: #bbbbbb;
 }
+option {
+  background-color: #bbbbbb; /* Màu nền của các tùy chọn */
+}
 
 #playlist {
   margin-top: 0;
