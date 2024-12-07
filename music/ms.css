@@ -1,6 +1,6 @@
 .player {
   margin-top: 10px;
-  margin-left: 5px:
+  margin-left: 5px;
   display: flex; /* Sử dụng Flexbox */
   align-items: center;
 }
