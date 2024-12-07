@@ -1,3 +1,9 @@
+UPADATE 06/12:
+
+- Playlist:
+   . Amee
+   
+-------/-------
 FIXED 01/12:
 
 - Playlist - Anh Trai Say Hi:
@@ -28,12 +34,4 @@ UPADATE 26/11:
 - Playlist:
    . Ngô Lan Hương
    . Justin Bieber
--------/-------
-UPADATE 25/11:
-
-- Playlist:
-   . Anh Trai Say Hi
-   . Low G
-   . 麥小兜 - Mạch Tiểu Đâu
-   
 -------/-------
