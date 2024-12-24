@@ -1,3 +1,9 @@
+UPADATE 24/12:
+
+- Playlist:
+   . Anh Phan
+   
+-------/-------
 UPADATE 22/12:
 
 - Playlist:
@@ -15,12 +21,5 @@ UPADATE 20/12:
 
 - Playlist:
    . Khởi My
-   
--------/-------
-UPADATE 16/12:
-
-- Playlist:
-   . Shiki
-   . Chi Dân
    
 -------/-------
