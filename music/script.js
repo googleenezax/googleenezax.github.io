@@ -101,7 +101,7 @@ function openPopup() {
     .then((response) => response.text())
     .then((data) => {
       // Hiển thị nội dung trong thẻ div
-      document.getElementById("eventContent").textContent = data;
+      document.getElementById("eventContent").innerHTML = data;
     })
     .catch((error) => {
       console.error("Lỗi khi đọc file:", error);
