@@ -1,5 +1,5 @@
 body {
-  background-color: #121212;
+  background-color: white;
   /* display: grid; */
   place-content: center;
   /* height: 100vh; */
@@ -11,7 +11,7 @@ nav {
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 0px;
-  box-shadow: 0 5px 30px 0 /*rgba(22, 32, 220, 0.37)*/;
+  /* box-shadow: 0 5px 30px 0 rgba(22, 32, 220, 0.37); */
   padding-right: 35px;
   border: 1px solid /*rgba(255, 255, 255, 0.18)*/;
 }
@@ -22,7 +22,7 @@ ul {
   list-style: none;
 }
 ul li {
-  color: #fff;
+  color: #121212;
   display: grid;
   place-content: center;
   margin: 0;
@@ -30,12 +30,12 @@ ul li {
 
 .logo {
   /* color: #0f1cdd; */
-  color: #fff;
+  color: #121212;
   cursor: pointer;
 }
 
 .menu {
-  color: #fff;
+  color: #121212;
   padding: 0.5rem;
   position: relative;
   text-decoration: none;
@@ -46,7 +46,7 @@ ul li {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: #121212;
   border-radius: 5px;
   transform: scaleX(0);
   transition: all 0.5s ease;
@@ -120,13 +120,13 @@ ul li {
 }
 
 .popup {
-  color: white;
+  color: #121212;
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #222;
+  background-color: whitesmoke;
   padding: 20px;
   border: 1px solid #444;
   border-radius: 5px;
